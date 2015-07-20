@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true"
+            tools:context=".SearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0f0f0"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/ic_action_sms"
+            android:text="@string/name"
+            android:textColor="#33b5e5"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical">
+
+            <com.cellasoft.ifoundit.widget.CleanableEditText
+                android:id="@+id/filter_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:drawableRight="@drawable/abs__ic_clear_holo_light"
+                android:ems="10"
+                android:hint="@string/first_name"
+                android:inputType="textCapWords"/>
+
+            <com.cellasoft.ifoundit.widget.CleanableEditText
+                android:id="@+id/filter_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:drawableRight="@drawable/abs__ic_clear_holo_light"
+                android:ems="10"
+                android:hint="@string/last_name"
+                android:inputType="textCapSentences"/>
+        </LinearLayout>
+
+        <TextView
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/ic_action_location"
+            android:text="@string/location"
+            android:textColor="#33b5e5"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical">
+
+
+            <com.cellasoft.ifoundit.widget.CustomAutoCompleteTextView
+                android:id="@+id/filter_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:completionThreshold="1"
+                android:ems="10"
+                android:hint="@string/country"
+                android:inputType="textAutoComplete|textAutoCorrect"
+                android:maxLength="2"/>
+
+            <com.cellasoft.ifoundit.widget.CustomAutoCompleteTextView
+                android:id="@+id/filter_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:completionThreshold="1"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="@string/state"
+                android:inputType="textAutoComplete|textAutoCorrect"/>
+
+            <com.cellasoft.ifoundit.widget.CleanableEditText
+                android:id="@+id/filter_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:drawableRight="@drawable/abs__ic_clear_holo_light"
+                android:hint="@string/city"
+                android:inputType="textPersonName"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
