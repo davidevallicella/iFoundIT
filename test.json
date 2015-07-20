@@ -1,0 +1,82 @@
+{
+    "@http_status_code": 200,
+    "@records_count": 2,
+    "warnings": [],
+    "query": {
+        "names": [{
+            "first": "Davide",
+            "last": "Vallicella",
+            "display": "Davide Vallicella"
+        }]
+    },
+    "person": {},
+    "records": [{
+        "@query_params_match": true,
+        "@query_person_match": 0.65864,
+        "@valid_since": "2011-08-04T00:00:00",
+        "source": {
+            "@is_sponsored": false,
+            "url": "http://www.twitter.com/efwefwefwefewfe",
+            "domain": "twitter.com",
+            "name": "Micro Blog - Twitter",
+            "category": "personal_profiles"
+        },
+        "names": [{
+            "first": "Davide",
+            "last": "Vallicella",
+            "display": "Davide Vallicella"
+        }],
+        "usernames": [{
+            "content": "efwefwefwefewfe"
+        }],
+        "user_ids": [{
+            "content": "120097538"
+        }]
+    }, {
+        "@query_params_match": true,
+        "@query_person_match": 0.65864,
+        "@valid_since": "2012-09-13T00:00:00",
+        "source": {
+            "@is_sponsored": false,
+            "url": "https://plus.google.com/114952610523333862677/about",
+            "domain": "plus.google.com",
+            "name": "Personal Profile - Google Profiles",
+            "category": "personal_profiles"
+        },
+        "names": [{
+            "first": "Davide",
+            "last": "Vallicella",
+            "display": "Davide Vallicella"
+        }],
+        "images": [{
+            "url": "https://lh6.googleusercontent.com/-H5FrMk-Rg54/AAAAAAAAAAI/AAAAAAAAAAA/rKfPwvOdZrw/s250-c-k/photo.jpg"
+        }],
+        "user_ids": [{
+            "content": "114952610523333862677"
+        }],
+        "relationships": [{
+            "@type": "friend",
+            "@subtype": "Friend",
+            "name": {
+                "first": "Simone",
+                "last": "Bernardi",
+                "display": "Simone Bernardi"
+            }
+        }]
+    }],
+    "suggested_searches": [{
+        "source": {
+            "@is_sponsored": false,
+            "url": "http://api.pipl.com/search/v3/json/?person=%7B%22names%22%3A+%5B%7B%22first%22%3A+%22Davide%22%2C+%22last%22%3A+%22Vallicella%22%2C+%22display%22%3A+%22Davide+Vallicella%22%7D%5D%2C+%22usernames%22%3A+%5B%7B%22content%22%3A+%22efwefwefwefewfe%22%7D%5D%7D&key=",
+            "domain": "api.pipl.com"
+        },
+        "names": [{
+            "first": "Davide",
+            "last": "Vallicella",
+            "display": "Davide Vallicella"
+        }],
+        "usernames": [{
+            "content": "efwefwefwefewfe"
+        }]
+    }]
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:summary="Filter"
+        android:title="Settings">
+        <CheckBoxPreference
+            android:key="prefOnlyImage"
+            android:summary="On/Off"
+            android:title="Only image fields"/>
+        <CheckBoxPreference
+            android:key="prefOnlySocial"
+            android:summary="On/Off"
+            android:title="Only social domains"/>
+    </PreferenceCategory>
+</PreferenceScreen>

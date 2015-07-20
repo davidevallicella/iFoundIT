@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              tools:context=".ResultActivity">
+
+    <include
+        android:id="@+id/loading"
+        layout="@layout/view_loading"
+        android:visibility="gone"/>
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.cellasoft.ifoundit.widget.PeopleListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="#00000000"
+            android:dividerHeight="0dp"
+            android:drawSelectorOnTop="true"
+            android:fadingEdge="none"
+            android:persistentDrawingCache="scrolling"
+            android:smoothScrollbar="false"/>
+
+        <ViewStub
+            android:id="@android:id/empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout="@layout/view_empty"/>
+    </FrameLayout>
+</LinearLayout>
+
