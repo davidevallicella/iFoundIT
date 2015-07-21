@@ -12,6 +12,7 @@ import android.widget.ListView;
 import com.actionbarsherlock.view.MenuInflater;
 import com.cellasoft.ifoundit.R;
 import com.cellasoft.ifoundit.models.People;
+import com.cellasoft.ifoundit.utils.FixSearchAPIRequest;
 import com.cellasoft.ifoundit.utils.Lists;
 import com.cellasoft.ifoundit.utils.UIUtils;
 import com.cellasoft.ifoundit.widget.PeopleListView;
@@ -114,7 +115,7 @@ public class ResultActivity extends BaseListActivity {
                 if (person != null) {
                     try {
 
-                        SearchAPIRequest request = new SearchAPIRequest.Builder().person(person).build();
+                        FixSearchAPIRequest request = new FixSearchAPIRequest.Builder().person(person).build();
                         SearchAPIResponse response = request.send();
 
                         for (Record record : response.getRecords()) {
